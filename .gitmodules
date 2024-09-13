@@ -1,0 +1,3 @@
+[submodule "wenet"]
+	path = wenet
+	url = https://github.com/wenet-e2e/wenet
