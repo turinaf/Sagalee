@@ -1,7 +1,7 @@
-# sagalee
+# Sagalee
 ASR dataset for Oromo language
 
-The dataset is available at [here](link)
+The dataset is available at [here]()
 
 ### Clone the Repo
 ```
@@ -40,7 +40,7 @@ sagalee_SPKR232_002     sagalee/train/SPKR232/sagalee_SPKR232_002.wav
 sagalee_SPKR232_082     HOJJATAA JIRA JECHUUN KOMATE
 sagalee_SPKR232_093     SAMMUU KEE KEESSA HIN KAAYANI
 ```
-After preparing data, simply run the stages starting from one. 
+After preparing data, simply run the stages starting from stage 1 (run one by one). 
 
 ```
 bash run.sh --stage 1 --stop_stage 1
