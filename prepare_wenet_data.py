@@ -1,10 +1,20 @@
 import os
 from tqdm import tqdm
+import re
+
 source_dir = "sagalee"
-output_dir = "wenet/examples/aishell/s0/data"
+output_dir = "wenet/examples/librispeech/s0/data"
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
+
+def remove_punc(sentence):
+    # Remove punc while retaining apostrophe and dot in decimal numbers
+    sentence = re.sub(r"(?!\b'\b)(?<!\d)\.(?!\d)|[^\w\s'.]", "", sentence).replace(" '", " ").replace("' ", " ").strip("'")
+    # Replace two or more spaces with single space
+    sentence = re.sub(r'\s{2,}', " ", sentence)
+    sentence = sentence.replace("è", "e").replace("ₒ", "").replace("•", "").replace("ʼ", "").replace(" ", "").replace("''", "")
+    return sentence.strip()
 
 for folder in os.listdir(source_dir):
     target_path = os.path.join(output_dir, folder) 
@@ -22,6 +32,8 @@ for folder in os.listdir(source_dir):
                 text_path = os.path.join(root, wav_id+".txt")
                 with open(text_path, "r", encoding='utf-8') as rf:
                     label = rf.read()
+                    label = remove_punc(label)
+                    label = label.upper()
                 with open(f"{target_path}/text", "a", encoding="utf-8") as wf:
                     wf.write(wav_id+"\t"+label+"\n")
                 with open(f"{target_path}/wav.scp", "a", encoding="utf-8") as sf:

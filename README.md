@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 ## Training recipes
  ### 1. Data preparation
- - Preprocess: remove punctuations and turn to upper case. 
+ - Preprocess: remove punctuations and write in trancription in place. `prepare_wenet_data.py` also removes punc, but won't save sentences to root folder after processing. 
  ```
  python3 preprocess.py
  ```
