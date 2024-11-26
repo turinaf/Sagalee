@@ -9,11 +9,12 @@ if not os.path.exists(output_dir):
     os.mkdir(output_dir)
 
 def remove_punc(sentence):
+    # remove some special characters
+    sentence = sentence.replace("è", "e").replace("ₒ", "").replace("•", "").replace("ʼ", "").replace("''", "").replace("_", " ").replace('\xa0', " ")
     # Remove punc while retaining apostrophe and dot in decimal numbers
     sentence = re.sub(r"(?!\b'\b)(?<!\d)\.(?!\d)|[^\w\s'.]", "", sentence).replace(" '", " ").replace("' ", " ").strip("'")
     # Replace two or more spaces with single space
     sentence = re.sub(r'\s{2,}', " ", sentence)
-    sentence = sentence.replace("è", "e").replace("ₒ", "").replace("•", "").replace("ʼ", "").replace(" ", "").replace("''", "")
     return sentence.strip()
 
 for folder in os.listdir(source_dir):
