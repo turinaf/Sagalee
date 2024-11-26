@@ -1,7 +1,7 @@
 # Sagalee
 ASR dataset for Oromo language
 
-The dataset is available at [here](https://forms.gle/u7zbRw1YEW4H2cCr9)
+The dataset is available at [here](https://forms.gle/u7zbRw1YEW4H2cCr9) 
 
 ### Clone the Repo
 ```
@@ -37,8 +37,10 @@ sagalee_SPKR232_082     HOJJATAA JIRA JECHUUN KOMATE
 sagalee_SPKR232_093     SAMMUU KEE KEESSA HIN KAAYANI
 ```
 ### 2 Run the training
-After preparing data, simply run the stages starting from stage 1 (run one by one). 
-
+After preparing data, navigate to the directory containing `run.sh` and simply run the stages starting from stage 1. 
+```
+cd wenet/examples/librispeech/s0
+```
 ``` 
 bash run.sh --stage 1 --stop_stage 1
 bash run.sh --stage 2 --stop_stage 2
@@ -52,6 +54,6 @@ bash run.sh --stage 5 --stop_stage 5
 * <strong> Stage 4</strong>: Training 
 * <strong> Stage 4</strong>: Testing the trained model
 ## Finetuning Whisper model
-To finetune whisper on follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md)
+To finetune whisper using the dataset follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md)
 ## Acknowledgement
-The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom `Sagalee` Dataset.
+The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom [Sagalee](https://github.com/turinaf/Sagalee) Dataset.
