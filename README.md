@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Training recipes
  
  ### 1 Prepare the data. 
- Running the script `prepare_wenet_data.py` script will prepare data in required format inside `wenet/examples/librispeech/s0/data/`. It organize the wav files and text files into two files. `wav.scp` containing two tab-separated columns with `wav_id` and `wav_path` and `txt` containing two tab-separated columns `wav_id` and 'text_label`
+ Running the script `prepare_wenet_data.py` script will prepare data in required format inside `wenet/examples/librispeech/s0/data/`. It organize the wav files and text files into two files. `wav.scp` containing two tab-separated columns with `wav_id` and `wav_path` and `txt` containing two tab-separated columns `wav_id` and `text_label`
 
 
 `wav.scp` file:
@@ -55,6 +55,3 @@ bash run.sh --stage 5 --stop_stage 5
 To finetune whisper on follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md)
 ## Acknowledgement
 The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom `Sagalee` Dataset.
-
-## License
-CC BY-NC 4.0
