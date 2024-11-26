@@ -52,7 +52,7 @@ bash run.sh --stage 5 --stop_stage 5
 * <strong> Stage 4</strong>: Training 
 * <strong> Stage 4</strong>: Testing the trained model
 ## Finetuning Whisper model
-To finetune whisper on follow these [steps](wenet\examples\aishell\whisper\README.md)
+To finetune whisper on follow these [steps](wenet/examples/aishell/whisper/README.md)
 ## Acknowledgement
 The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom `Sagalee` Dataset.
 
