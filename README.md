@@ -1,7 +1,9 @@
-# Sagalee
-ASR dataset for Oromo language
+# Sagalee: Automatic Speech Recognition Dataset for Oromo language
 
-The dataset is available at [here](https://forms.gle/u7zbRw1YEW4H2cCr9) 
+Sagalee dataset released under the CC BY-NC 4.0 International license, a summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/), and the full license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
+
+The dataset is available [on this link](https://drive.google.com/file/d/1u3QT-s25NAnAU8XE5HaXlwfDVQPnYLtY/view?usp=sharing) 
+
 
 ### Clone the Repo
 ```
@@ -54,6 +56,10 @@ bash run.sh --stage 5 --stop_stage 5
 * <strong> Stage 4</strong>: Training 
 * <strong> Stage 4</strong>: Testing the trained model
 ## Finetuning Whisper model
-To finetune whisper using the dataset follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md)
+- `finetune_whisper.py` is used to fine tune whisper largev3 (you can change model size) by freezing bottom layers of encoder on Sagalee dataset, you can simply run this python script to finetune.
+```
+python finetune_whisper.py
+```
+- For full paramater finetuning, follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md) in wenet script.
 ## Acknowledgement
 The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom [Sagalee](https://github.com/turinaf/Sagalee) Dataset.
