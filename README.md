@@ -8,7 +8,7 @@ The dataset is available [on this link](https://drive.google.com/file/d/1u3QT-s2
 * 🎉 [2024-12-20] Sagalee paper accepted to [ICASS 2025](https://2025.ieeeicassp.org/) Conference
 
 
-# Training ASR on Sagalee Dataset
+## Training ASR on Sagalee Dataset
 ### Clone the Repo
 ```
 git clone https://github.com/turinaf/sagalee.git
