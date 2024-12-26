@@ -5,8 +5,8 @@ Sagalee dataset released under the CC BY-NC 4.0 International license, a summary
 The dataset is available [on this link](https://drive.google.com/file/d/1u3QT-s25NAnAU8XE5HaXlwfDVQPnYLtY/view?usp=sharing) 
 
 ##  News 
-* 🎉 [2024-12-20] Sagalee paper accepted to [ICASSP 2025](https://2025.ieeeicassp.org/) Conference
-
+- 🎉 [2024-12-20] Sagalee paper accepted to [ICASSP 2025](https://2025.ieeeicassp.org/) Conference
+- ✨ [2024-11-28] Sagalee dataset released under [CC BY-NC 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
 
 ## Training ASR on Sagalee Dataset
 ### Clone the Repo
