@@ -65,7 +65,7 @@ if os.path.exists(dataset_dir+"/train") and os.path.exists(dataset_dir+"/test") 
 else:
     print("Loading raw data and extracting features")
     # Prepare dataset and data loader
-    base_dir = "/path/to/sagalee"  
+    base_dir = "/work103/turi/project/oasr/sagalee"  
     dataset = load_sagalee_dataset(base_dir)
     dataset = Dataset.from_pandas(pd.DataFrame(dataset))
     dataset = DatasetDict({'train': dataset.filter(lambda x: x['split'] == 'train'), 'dev': dataset.filter(lambda x: x['split']=='dev'), 'test': dataset.filter(lambda x: x['split']=='test')})
