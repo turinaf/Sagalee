@@ -13,7 +13,7 @@ The dataset is available [on this link](https://drive.google.com/file/d/1u3QT-s2
 ```
 git clone https://github.com/turinaf/sagalee.git
 cd sagalee
-git submodule update --init --recursive
+git submodule update --init --no-fetch
 ```
 ### Create env and install dependancy
 ```
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ## Training recipes
  
  ### 1 Prepare the data. 
- Running the script `prepare_wenet_data.py` script will prepare data in required format inside `wenet/examples/librispeech/s0/data/`. It organize the wav files and text files into two files. `wav.scp` containing two tab-separated columns with `wav_id` and `wav_path` and `txt` containing two tab-separated columns `wav_id` and `text_label`
+ Running the script `prepare_wenet_data.py` will prepare data in required format inside `wenet/examples/sagalee/s0/data/`. It organize the wav files and text files into two files. `wav.scp` containing two tab-separated columns with `wav_id` and `wav_path` and `text` containing two tab-separated columns `wav_id` and `text_label`
 
 
 `wav.scp` file:
@@ -43,9 +43,9 @@ sagalee_SPKR232_082     HOJJATAA JIRA JECHUUN KOMATE
 sagalee_SPKR232_093     SAMMUU KEE KEESSA HIN KAAYANI
 ```
 ### 2 Run the training
-After preparing data, navigate to the directory containing `run.sh` and simply run the stages starting from stage 1. 
+After preparing data, navigate to the directory containing `run.sh`, and simply run the stages starting from stage 1. 
 ```
-cd wenet/examples/librispeech/s0
+cd wenet/examples/sagalee/s0
 ```
 ``` 
 bash run.sh --stage 1 --stop_stage 1
