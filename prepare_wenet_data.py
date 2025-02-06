@@ -3,7 +3,7 @@ from tqdm import tqdm
 import re
 
 source_dir = "sagalee"
-output_dir = "wenet/examples/librispeech/s0/data"
+output_dir = "wenet/examples/sagalee/s0/data"
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
