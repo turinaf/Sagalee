@@ -1,15 +1,15 @@
-# Sagalee: Automatic Speech Recognition Dataset for Oromo language
+## Sagalee: Automatic Speech Recognition Dataset for Oromo language
 
-Sagalee dataset released under the CC BY-NC 4.0 International license, a summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/), and the full license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
-
-The dataset is available [on this link](https://drive.google.com/file/d/1u3QT-s25NAnAU8XE5HaXlwfDVQPnYLtY/view?usp=sharing) 
+Sagalee dataset released under the CC BY-NC 4.0 International license, a summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/), and the full license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode).<br>
+Paper is now available on arxiv: [Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language](https://arxiv.org/abs/2502.00421) <br>
+The dataset: [on this link](https://drive.google.com/file/d/1u3QT-s25NAnAU8XE5HaXlwfDVQPnYLtY/view?usp=sharing) 
 
 ##  News 
 - 🎉 [2024-12-20] Sagalee paper accepted to [ICASSP 2025](https://2025.ieeeicassp.org/) Conference
 - ✨ [2024-11-28] Sagalee dataset released under [CC BY-NC 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode) license.
 
 ## Training ASR on Sagalee Dataset
-### Clone the Repo
+### Clone this Repo
 ```
 git clone https://github.com/turinaf/sagalee.git
 cd sagalee
@@ -65,5 +65,20 @@ bash run.sh --stage 5 --stop_stage 5
 python finetune_whisper.py
 ```
 - For full paramater finetuning, follow these [steps](https://github.com/turinaf/wenet/blob/f4ff710f95bb30bdd898fd463f2877a504df7533/examples/aishell/whisper/README.md) in wenet script.
+
+## Citation
+
+```
+@misc{turi2025sagalee,
+      title={Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language}, 
+      author={Turi Abu and Ying Shi and Thomas Fang Zheng and Dong Wang},
+      year={2025},
+      eprint={2502.00421},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.00421}, 
+}
+```
+
 ## Acknowledgement
 The training code is adapted from [WeNet](https://github.com/wenet-e2e/wenet) and used to train model on our custom [Sagalee](https://github.com/turinaf/Sagalee) Dataset.
