@@ -2,7 +2,7 @@
 
 Sagalee dataset released under the CC BY-NC 4.0 International license, a summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/), and the full license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode).<br>
 Paper is now available on arxiv: [Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language](https://arxiv.org/abs/2502.00421) <br>
-The dataset: [on this link](https://drive.google.com/file/d/1u3QT-s25NAnAU8XE5HaXlwfDVQPnYLtY/view?usp=sharing) 
+The dataset: [on this link](https://openslr.elda.org/157/) 
 
 ##  News 
 - 🎉 [2024-12-20] Sagalee paper accepted to [ICASSP 2025](https://2025.ieeeicassp.org/) Conference
