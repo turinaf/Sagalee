@@ -2,7 +2,7 @@
 
 Sagalee dataset released under the CC BY-NC 4.0 International license, a summary of the license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/), and the full license can be found [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode).<br>
 Paper is now available on arxiv: [Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language](https://arxiv.org/abs/2502.00421) <br>
-The dataset: [on this link](https://openslr.elda.org/157/) 
+The dataset: [on this link](https://openslr.org/157/) 
 
 ##  News 
 - 🎉 [2024-12-20] Sagalee paper accepted to [ICASSP 2025](https://2025.ieeeicassp.org/) Conference
@@ -69,15 +69,16 @@ python finetune_whisper.py
 ## Citation
 
 ```
-@misc{turi2025sagalee,
-      title={Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language}, 
-      author={Turi Abu and Ying Shi and Thomas Fang Zheng and Dong Wang},
-      year={2025},
-      eprint={2502.00421},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.00421}, 
-}
+@INPROCEEDINGS{10890761,
+  author={Abu, Turi and Shi, Ying and Zheng, Thomas Fang and Wang, Dong},
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Crowdsourcing;Error analysis;Signal processing;Phonetics;Audio recording;Acoustics;Noise measurement;Speech processing;Research and development;Automatic speech recognition;Speech Recognition;Afaan Oromo;Dataset;Speech processing},
+  doi={10.1109/ICASSP49660.2025.10890761}}
 ```
 
 ## Acknowledgement
